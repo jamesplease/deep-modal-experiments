@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Modal Experiment</title>
+  <link rel="stylesheet" href="../common.css">
+  <link rel="stylesheet" href="./slide-up.css">
+</head>
+<body>
+
+  <main>
+    <!-- Here be the modal -->
+    <div class="modal">
+    </div>
+  </main>
+
+  <template id="utilization-modal">
+    <div class="contents">
+      <h1 class="modal-header">
+        <span>
+          Utilization for <a>Rachel Mosley</a>
+        </span>
+        <i class="close-icon">✕</i>
+      </h1>
+
+      <!-- First row -->
+      <div class="input-row">
+        <div class="input-container">
+          <label>
+            Type:
+          </label>
+          <div class="fake-input fake-select">
+            Consulting
+          </div>
+        </div>
+        <div class="input-container">
+          <label>
+            Calendar:
+          </label>
+          <div class="fake-input fake-select">
+            Main Calendar
+          </div>
+        </div>
+      </div>
+
+      <!-- Second row -->
+      <div class="input-row">
+        <div class="input-container">
+          <label>
+            Project:
+          </label>
+          <div class="fake-input fake-select">
+            Canvas Books, Inc.
+          </div>
+        </div>
+        <div class="input-container">
+          <label>
+            Project Phase:
+          </label>
+          <div class="fake-input fake-select">
+            Phase One
+          </div>
+        </div>
+      </div>
+
+      <!-- Dates row -->
+      <div class="input-row">
+        <div class="input-container">
+          <label>
+            First day:
+          </label>
+          <div class="fake-input fake-text fake-date">
+            04-12-2015
+          </div>
+        </div>
+        <div class="input-container">
+          <label>
+            Last day:
+          </label>
+          <div class="fake-input fake-text fake-date">
+            04-25-2015
+          </div>
+        </div>
+      </div>
+
+      <div class="input-row-full">
+        <label>Notes:</label>
+        <div class="fake-input fake-text fake-textarea"></div>
+      </div>
+
+      <div class="button-row">
+        <button class="delete">Delete</button>
+        <button class="discard">Discard changes</button>
+        <button class="save">Save</button>
+      </div>
+    </div>
+  </template>
+
+  <template id="employee-modal">
+    <div class="contents employee-contents">
+      <div class="return">
+        <a>Return to Utilization</a>
+      </div>
+      <h1 class="modal-header">
+        <span>
+          Editing Employee
+        </span>
+        <i class="close-icon">✕</i>
+      </h1>
+
+      <div class="employee-profile-row">
+        <div class="employee-pic">
+          <img src="../assets/rachel-mosley.jpg" alt="Rachel Mosley">
+        </div>
+        <div class="employee-info">
+          <div class="input-container">
+            <label>
+              Name:
+            </label>
+            <div class="fake-input fake-text">
+              Rachel Mosley
+            </div>
+          </div>
+          <div class="input-container">
+            <label>
+              Position:
+            </label>
+            <div class="fake-input fake-select">
+              Software Engineer
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- First row -->
+      <div class="input-row">
+        <div class="input-container">
+          <label>
+            Email:
+          </label>
+          <div class="fake-input fake-text">
+            rmosley@codes.biz
+          </div>
+        </div>
+        <div class="input-container">
+          <label>
+            Phone:
+          </label>
+          <div class="fake-input fake-text">
+            242-555-1253
+          </div>
+        </div>
+      </div>
+
+      <!-- Second row -->
+      <div class="input-row">
+        <div class="input-container">
+          <label>
+            Employment start:
+          </label>
+          <div class="fake-input fake-text">
+            04-01-2014
+          </div>
+        </div>
+        <div class="input-container">
+          <label>
+            Employment end:
+          </label>
+          <div class="fake-input fake-text">
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="button-row">
+        <button class="delete">Delete</button>
+        <button class="discard">Discard changes</button>
+        <button class="save">Save</button>
+      </div>
+    </div>
+  </template>
+  <script src="../common.js"></script>
+  <script src="./slide-up.js"></script>
+</body>
+</html>

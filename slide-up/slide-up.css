@@ -1,0 +1,18 @@
+.employee-contents {
+  top: 545px;
+  transition: top .3s;
+  border-top: 1px solid #ddd;
+}
+
+.employee-contents-top {
+  top: -1px;
+  transition: top .3s;
+}
+
+.modal {
+  transition: height .3s;
+}
+
+.employee-modal {
+  height: 547px;
+}
